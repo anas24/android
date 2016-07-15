@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anas.hikerswatch.MainActivity"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/mountain"
+        android:scaleType="centerCrop"
+        android:padding="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="latitude:"
+        android:id="@+id/latitude"
+        android:layout_marginStart="47dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/latvlue"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/latitude"
+        android:layout_toEndOf="@+id/latitude"
+        android:layout_marginStart="51dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:id="@+id/textView"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/latitude"
+        android:layout_alignStart="@+id/latitude" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longvalue"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignStart="@+id/latvlue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="altitude"
+        android:id="@+id/altitude"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/alvalue"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alvalue"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/longvalue"
+        android:layout_alignStart="@+id/longvalue"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/loc"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/altitude" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/addressvalue"
+        android:layout_below="@+id/loc"
+        android:layout_alignStart="@+id/altitude"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
